@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .counter-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #counter {
+        font-size: 36px;
+        width: 80px;
+        text-align: center;
+        margin: 0 20px;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <h1 style="color: #007bff;">Counter Application</h1>
+        <div class="counter-container">
+            <button id="decrement">-</button>
+            <span id="counter">00</span>
+            <button id="increment">+</button>
+        </div>
+    </div>
+
+    <script src="counter.js"></script>
+</body>
+
+</html>
